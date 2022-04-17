@@ -26,13 +26,24 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <button type="button" class="btn btn-secondary btn-lg btn-block todayButton mb-2">Today</button>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
       <!-- Timeblocks go here -->
+      <section class="row time-block day-navigation">
+        <button class="saveBtn prevBtn col-2">Previous Day</button>
+        <div class="col-8 past">
+          <p class="past workDay" type="text"></p>
+        </div>
+        <button type="button" class="saveBtn nextBtn col-2">Next Day</button>
+      </section>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
